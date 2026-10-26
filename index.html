@@ -92,6 +92,21 @@
 .about-stat-n{font-family:'Bebas Neue',sans-serif;font-size:32px;background:linear-gradient(135deg,var(--y1),var(--o1));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;min-width:60px;}
 .about-stat-l{font-size:13px;color:var(--text-muted);}
 
+/* ABOUT INTRO VIDEO */
+.about-video-wrap {
+    margin: 0 40px 40px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--border-col);
+    background: var(--bg-mid);
+}
+.about-video-wrap video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 500px;
+}
+
 .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border-col);margin:0 40px 40px;}
 .val-card{background:var(--bg-mid);padding:28px 24px;transition:background 0.2s;}
 .val-card:hover{background:#1c1035;}
@@ -106,7 +121,7 @@
 .phanku-list{display:flex;flex-direction:column;gap:1px;background:var(--border-col);}
 .phanku-item{background:var(--bg-mid);display:flex;align-items:center;gap:28px;padding:28px;transition:background 0.2s;}
 .phanku-item:hover{background:#1c1035;}
-./* Tạo khung cố định cho tất cả logo phân khu */
+/* Tạo khung cố định cho tất cả logo phân khu */
 .phanku-logo-wrap {
     height: 60px;
     display: flex;
@@ -222,6 +237,7 @@ textarea.f-inp{resize:vertical;min-height:80px;}
   /* ABOUT */
   .about-intro { grid-template-columns: 1fr; gap: 32px; padding: 40px 20px; }
   .about-intro-title { font-size: 40px; }
+  .about-video-wrap { margin: 0 20px 40px; }
   .values-grid { grid-template-columns: 1fr; margin: 0 20px 40px; }
   
   /* PHÂN KHU */
@@ -424,6 +440,11 @@ textarea.f-inp{resize:vertical;min-height:80px;}
     </div>
   </div>
 
+  <div class="about-video-wrap">
+      <!-- Thay 'intro.mp4' bằng đường dẫn video của bạn -->
+      <video src="intro.mp4" autoplay loop muted playsinline></video>
+  </div>
+
   <div class="values-grid">
     <div class="val-card"><span class="val-icon">🎉</span><div class="val-title">Festive</div><div class="val-text">Mỗi buổi diễn là một lễ hội. Chúng tôi mang năng lượng vui tươi, phấn khích đến mọi sân khấu.</div></div>
     <div class="val-card"><span class="val-icon">⚡</span><div class="val-title">Vibrant Energy</div><div class="val-text">FE.VER không có nút tắt. Mọi thành viên đều sống hết mình trong từng nhịp điệu và động tác.</div></div>
@@ -488,9 +509,9 @@ textarea.f-inp{resize:vertical;min-height:80px;}
     <div class="mem-card" data-year="2023"><div class="mem-avatar" style="background:rgba(255,214,0,0.14)">QT</div><div class="mem-name">Quang Thơ</div><div class="mem-year">Từ 2023</div><span class="mem-gen" style="color:var(--o2);border-color:rgba(255,149,0,0.35);background:rgba(255,149,0,0.1)">Gen 2023</span></div>
     <div class="mem-card" data-year="2023"><div class="mem-avatar" style="background:rgba(155,79,232,0.16)">NH</div><div class="mem-name">Ngọc Huyền</div><div class="mem-year">Từ 2023</div><span class="mem-gen" style="color:var(--o2);border-color:rgba(255,149,0,0.35);background:rgba(255,149,0,0.1)">Gen 2023</span></div>
     <div class="mem-card" data-year="2023"><div class="mem-avatar" style="background:rgba(196,95,208,0.14)">TT</div><div class="mem-name">Thanh Thảo</div><div class="mem-year">Từ 2023</div><span class="mem-gen" style="color:var(--o2);border-color:rgba(255,149,0,0.35);background:rgba(255,149,0,0.1)">Gen 2023</span></div>
-    <div class="mem-card" data-year="2023"><div class="mem-avatar" style="background:rgba(255,107,26,0.16)">PD</div><div class="mem-name">Zidu Zidu (Vủ Duy)</div><div class="mem-year">Từ 2023</div><span class="mem-gen" style="color:var(--o2);border-color:rgba(255,149,0,0.35);background:rgba(255,149,0,0.1)">Gen 2023</span></div>
+    <div class="mem-card" data-year="2023"><div class="mem-avatar" style="background:rgba(255,107,26,0.16)">PZ</div><div class="mem-name">Ph.Zidu (Vủ Duy)</div><div class="mem-year">Từ 2023</div><span class="mem-gen" style="color:var(--o2);border-color:rgba(255,149,0,0.35);background:rgba(255,149,0,0.1)">Gen 2023</span></div>
     <div class="mem-card" data-year="2023"><div class="mem-avatar" style="background:rgba(155,79,232,0.12)">NT</div><div class="mem-name">Nguyễn Thành</div><div class="mem-year">Từ 2023</div><span class="mem-gen" style="color:var(--o2);border-color:rgba(255,149,0,0.35);background:rgba(255,149,0,0.1)">Gen 2023</span></div>
-    <div class="mem-card" data-year="2024"><div class="mem-avatar" style="background:rgba(255,214,0,0.18)">BN</div><div class="mem-name">Bí Nghe (Nghi Huỳnh)</div><div class="mem-year">Từ 2024</div><span class="mem-gen" style="color:var(--y1);border-color:rgba(255,214,0,0.35);background:rgba(255,214,0,0.08)">Gen 2024</span></div>
+    <div class="mem-card" data-year="2024"><div class="mem-avatar" style="background:rgba(255,214,0,0.18)">BN</div><div class="mem-name">Bí NghE (Nghi Huỳnh)</div><div class="mem-year">Từ 2024</div><span class="mem-gen" style="color:var(--y1);border-color:rgba(255,214,0,0.35);background:rgba(255,214,0,0.08)">Gen 2024</span></div>
     <div class="mem-card" data-year="2024"><div class="mem-avatar" style="background:rgba(255,107,26,0.12)">PT</div><div class="mem-name">Phương Thảo</div><div class="mem-year">Từ 2024</div><span class="mem-gen" style="color:var(--y1);border-color:rgba(255,214,0,0.35);background:rgba(255,214,0,0.08)">Gen 2024</span></div>
     <div class="mem-card" data-year="2024"><div class="mem-avatar" style="background:rgba(196,95,208,0.16)">BL</div><div class="mem-name">Bạch Luân</div><div class="mem-year">Từ 2024</div><span class="mem-gen" style="color:var(--y1);border-color:rgba(255,214,0,0.35);background:rgba(255,214,0,0.08)">Gen 2024</span></div>
     <div class="mem-card" data-year="2025"><div class="mem-avatar" style="background:rgba(255,149,0,0.14)">GF</div><div class="mem-name">GeniusDiFang (Bảo Duy)</div><div class="mem-year">Từ 2025</div><span class="mem-gen" style="color:#FF6B1A;border-color:rgba(255,107,26,0.4);background:rgba(255,107,26,0.1)">Gen 2025</span></div>
@@ -500,8 +521,8 @@ textarea.f-inp{resize:vertical;min-height:80px;}
     <div class="mem-card" data-year="2026"><div class="mem-avatar" style="background:rgba(255,149,0,0.14)">XA</div><div class="mem-name">Xuân An</div><div class="mem-year">Từ 2026</div><span class="mem-gen" style="color:#FF6B1A;border-color:rgba(255,107,26,0.4);background:rgba(255,107,26,0.1)">Gen 2026</span></div>
     <div class="mem-card" data-year="2026"><div class="mem-avatar" style="background:rgba(155,79,232,0.14)">PL</div><div class="mem-name">Pele (Mai Linh)</div><div class="mem-year">Từ 2026</div><span class="mem-gen" style="color:#FF6B1A;border-color:rgba(255,107,26,0.4);background:rgba(255,107,26,0.1)">Gen 2026</span></div>
     <div class="mem-card" data-year="2026"><div class="mem-avatar" style="background:rgba(255,214,0,0.1)">TN</div><div class="mem-name">Thùy Nguyễn</div><div class="mem-year">Từ 2026</div><span class="mem-gen" style="color:#FF6B1A;border-color:rgba(255,107,26,0.4);background:rgba(255,107,26,0.1)">Gen 2026</span></div>
-    <div class="mem-card" data-year="2026"><div class="mem-avatar" style="background:rgba(196,95,208,0.12)">__</div><div class="mem-name">________</div><div class="mem-year">Từ 2026</div><span class="mem-gen" style="color:#FF6B1A;border-color:rgba(255,107,26,0.4);background:rgba(255,107,26,0.1)">Gen 2026</span></div>
-    <div class="mem-card" data-year="2026"><div class="mem-avatar" style="background:rgba(196,95,208,0.12)">__</div><div class="mem-name">________</div><div class="mem-year">Từ 2026</div><span class="mem-gen" style="color:#FF6B1A;border-color:rgba(255,107,26,0.4);background:rgba(255,107,26,0.1)">Gen 2026</span></div>
+    <div class="mem-card" data-year="2026"><div class="mem-avatar" style="background:rgba(196,95,208,0.12)">SH</div><div class="mem-name">Sanh Huy</div><div class="mem-year">Từ 2026</div><span class="mem-gen" style="color:#FF6B1A;border-color:rgba(255,107,26,0.4);background:rgba(255,107,26,0.1)">Gen 2026</span></div>
+    <div class="mem-card" data-year="2026"><div class="mem-avatar" style="background:rgba(196,95,208,0.12)">MT</div><div class="mem-name">Minh Trân</div><div class="mem-year">Từ 2026</div><span class="mem-gen" style="color:#FF6B1A;border-color:rgba(255,107,26,0.4);background:rgba(255,107,26,0.1)">Gen 2026</span></div>
     <div class="mem-card" data-year="2026"><div class="mem-avatar" style="background:rgba(196,95,208,0.12)">__</div><div class="mem-name">________</div><div class="mem-year">Từ 2026</div><span class="mem-gen" style="color:#FF6B1A;border-color:rgba(255,107,26,0.4);background:rgba(255,107,26,0.1)">Gen 2026</span></div>
     <div class="mem-card" data-year="2026"><div class="mem-avatar" style="background:rgba(196,95,208,0.12)">__</div><div class="mem-name">________</div><div class="mem-year">Từ 2026</div><span class="mem-gen" style="color:#FF6B1A;border-color:rgba(255,107,26,0.4);background:rgba(255,107,26,0.1)">Gen 2026</span></div>
   </div>
@@ -627,13 +648,13 @@ textarea.f-inp{resize:vertical;min-height:80px;}
         <div class="masonry-item"><img src="p22.jpg" onclick="openLightbox(this.src)"></div>
         <div class="masonry-item"><img src="p20.jpg" onclick="openLightbox(this.src)"></div>
         <div class="masonry-item">
-           <video src="p23.mp4" autoplay loop playsinline controls controlsList="noplaybackrate" style="width: 100%; display: block; cursor: pointer;"></video>
+           <video src="p23.mp4" loop playsinline controls controlsList="noplaybackrate" preload="metadata" style="width: 100%; display: block; cursor: pointer;"></video>
         </div>
         <div class="masonry-item"><img src="p19.jpg" onclick="openLightbox(this.src)"></div>
         <div class="masonry-item"><img src="p21.jpg" onclick="openLightbox(this.src)"></div>
         <div class="masonry-item"><img src="p25.jpg" onclick="openLightbox(this.src)"></div>
          <div class="masonry-item">
-           <video src="p24.mp4" autoplay loop playsinline controls controlsList="noplaybackrate" style="width: 100%; display: block; cursor: pointer;"></video>
+           <video src="p24.mp4" loop playsinline controls controlsList="noplaybackrate" preload="metadata" style="width: 100%; display: block; cursor: pointer;"></video>
         </div>
         <div class="masonry-item"><img src="p16.jpg" onclick="openLightbox(this.src)"></div>
         <div class="masonry-item"><img src="p18.jpg" onclick="openLightbox(this.src)"></div>
